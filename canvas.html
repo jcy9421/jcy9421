@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var cnv = document.getElementById("canvas")
+            var cxt = cnv.getContext("2d");
+            cxt.moveTo(50, 100)
+            cxt.lineTo(150, 50)
+            cxt.storke()
+        }
+
+    </script>
+</head>
+<body>
+<canvas id="canvas" width="200" height="150" style="border: 1px solid darkblue"></canvas>
+</body>
+</html>
