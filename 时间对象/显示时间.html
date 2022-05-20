@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<script>
+    let arr = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+    setInterval(function () {
+        let date = new Date()
+        let year = date.getFullYear()
+        let month = date.getMonth() + 1
+        let date1 = date.getDate()
+        let hour = date.getHours()
+        let sec = date.getSeconds()
+        if (sec < 10) {
+            sec = '0' + sec
+        }
+        let min = date.getMinutes()
+        if (min < 10) {
+            min = '0' + min
+        }
+        let day = date.getDay()
+        let div = document.querySelector('div')
+        div.innerHTML = `今天是： ${year}年${month}月${date1}日  ${hour}：${min}：${sec} -- ${arr[day]}`
+    }, 1000)
+
+</script>
+</body>
+</html>
