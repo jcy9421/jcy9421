@@ -206,6 +206,10 @@
         </div>
         <div class="content">${textarea.value}</div>
         <span class="the_del">X</span>`
+        let del = li.querySelector('.the_del')
+        del.addEventListener('click', function () {
+            ul.removeChild(li)
+        })
         ul.insertBefore(li, ul.children[0])
         textarea.value = ''
         useCount.innerHTML = 0
