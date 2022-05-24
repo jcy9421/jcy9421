@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .fat {
+            width: 500px;
+            height: 500px;
+            background-color: #0099cc;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: #9bceea;
+        }
+    </style>
+</head>
+<body>
+<div class="fat">
+    <div class="son"></div>
+</div>
+<script !src="">
+    fat = document.querySelector('.fat')
+    son = document.querySelector('.son')
+    fat.addEventListener('click', function () {
+        alert('爸爸')
+    })
+    son.addEventListener('click', function (e) {
+        alert('儿子')
+        e.stopPropagation()
+    })
+    document.addEventListener('click', function () {
+        alert('爷爷')
+    })
+</script>
+</body>
+</html>
