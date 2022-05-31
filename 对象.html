@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    let obj = {
+        uname: '张三',
+        age: 22,
+        sex: '男',
+        taiji: function () {
+            console.log('taiji')
+        }
+    }
+    // obj.taiji()
+    // console.log(obj.taiji)
+    // console.log(obj['uname'])
+    for (const Key in obj) {
+        console.log(obj[Key])
+    }
+</script>
+</body>
+</html>
