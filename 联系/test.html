@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // var arr = [1, 2, 4, 6, 8, 4, 9, 12, 16, 20, 100];
+    // let arr1 = arr.reverse()
+    // console.log(arr1)
+    //
+    // var arrs = ["宋江", "张飞", 50, 0];
+    // let arr2 = arrs.reverse()
+    // console.log(arr2)
+
+    let arr = ['a', 'b', 'a', 'c', 'd', 'a', 'd', 'b', 'c', 'd', 'e']
+    let newArr = []
+    arr.forEach(item => {
+        console.log(item)
+        if (newArr.indexOf(item) === -1) {
+            newArr.push(item)
+        }
+    })
+    console.log(newArr)
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script !src="">
+    // function Person(uname, age, height, weight) {
+    //     this.uname = uname
+    //     this.age = age
+    //     this.height = height
+    //     this.weight = weight
+    //     this.eat = function () {
+    //         console.log('吃饭')
+    //     }
+    //     this.sleep = function () {
+    //         console.log('睡觉')
+    //     }
+    // }
+    //
+    // console.log(new Person('张飞', 22, '180cm', '170kg'))
+
+    // TODO 原型对象 constructor
+    // function Person() {
+    //
+    // }
+    //
+    // console.log(Person.prototype)
+    // console.log(Person.prototype.constructor)
+
+    // function Person(uname, age,) {
+    //     this.uname = uname
+    //     this.age = age
+    // }
+    //
+    // Person.prototype.eat = function () {
+    //     console.log('吃饭')
+    // }
+    // Person.prototype.drink = function () {
+    //     console.log('喝水')
+    // }
+    // let obj = new Person('张三', 24)
+    // console.log(obj)
+
+    // let obj = {
+    //     head: 1,
+    //     eyes: 2,
+    //     legs: 2,
+    //     skin: 'yellow',
+    //     say: function () {
+    //         console.log('say')
+    //     },
+    //     eat: function () {
+    //         console.log('eat')
+    //     }
+    // }
+    //
+    // function Chinese() {
+    //     this.language = '汉语'
+    // }
+    //
+    // Chinese.prototype = obj
+    // Chinese.prototype.constructor = Chinese
+    // let c1 = new Chinese()
+    // console.log(c1)
+
+    // function Japanese() {
+    //     this.language = '日语'
+    // }
+
+    // let arr = [1, 2, 3, 4, 5, 6]
+    // Array.prototype.sum = function () {
+    //     let he = 0
+    //     for (let i = 0; i < this.length; i++) {
+    //         he = he + this[i]
+    //     }
+    //     return he
+    // }
+    // console.log(arr.sum())
+
+    // let arr = [1, 1, 1, 1, 1, 1, 1]
+    // Array.prototype.sum = function () {
+    //     let he = 0
+    //     this.forEach(item => {
+    //         he = he + item
+    //     })
+    //     return he
+    // }
+    // console.log(arr.sum())
+
+    // function fn(a, b) {
+    //     console.log(this, a, b)
+    // }
+    //
+    // let obj = {
+    //     uname: 'zhangsan',
+    //     age: 22
+    // }
+    // fn.call(obj, [111, 222])
+
+    let arr = [55, 22, 52, 63, 74, 23, 2, 67]
+    let res = Math.max.apply(null, arr)
+    console.log(res)
+
+
+</script>
+</body>
+</html>

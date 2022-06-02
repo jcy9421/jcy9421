@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,30 @@
 </head>
 <body>
 <script !src="">
-    let obj = new Object({uname: 'zhansan', age: 22, sex: 'nan'})
-    let re = Object.keys(obj)
-    console.log(re)
+    // let obj = new Object({
+    //     uname: 'zhansan',
+    //     age: 22,
+    //     sex: 'nan'
+    // })
+    // let re = Object.keys(obj)
+    // console.log(re)
+
+    // let obj = new Object({
+    //     uname: 'zhangsan',
+    //     age: 22,
+    //     sex: 'nan',
+    //     taiji: function () {
+    //         console.log(taiji)
+    //     }
+    // })
+    // let re = Object(obj)
+    // console.log(re)
+    // console.log(Object.values(obj))
+
+    // TODO 数组也是复杂引用类型
+    let arr = new Array(1, 2, 3)
+    console.log(arr instanceof Array)
+
 
 </script>
 </body>
